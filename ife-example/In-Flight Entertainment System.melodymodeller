@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--Capella_Version_1.1.0-->
+<!--Capella_Version_null-->
 <org.polarsys.capella.core.data.capellamodeller:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/1.1.0"
     xmlns:org.polarsys.capella.core.data.capellacommon="http://www.polarsys.org/capella/core/common/1.1.0"
@@ -1201,7 +1201,10 @@
                 description="[Not coevered in this version of the model]"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
                 id="ff70c856-f667-4e61-98d7-00190703d53a" name="Launch and Analyze Tests"
-                description="[Not covered in the version of the model] This function consists in triggering system tests, typically during maintenance&#xD;&#xA;phases."/>
+                description="[Not covered in the version of the model] This function consists in triggering system tests, typically during maintenance&#xD;&#xA;phases.">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="55c1a354-2a3e-4439-8e4b-0e01ea06b936" name="FIP 1"/>
+            </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
                 id="5e0fff47-a1a5-4a13-867c-18348bd894af" name="Set Passenger Service Authorization"
                 description="The airline company may have specific business strategies: According to the class they are travelling in, passengers may&#xD;&#xA;benefit from different IFE services.&amp;nbsp;This function consists in uploading a profile that describes the authorization&#xD;&#xA;schemes.">
@@ -1431,6 +1434,11 @@
                   id="05fd95ce-873c-4772-8156-739a6383ce86" name="FOP 1"/>
             </ownedFunctions>
           </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="7fdbbeb5-db7e-405b-a981-5b17262f43ea" name="Setup Test Harness">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="330cc398-1c4a-4d9d-b85e-b0a6617d4551" name="FOP 1"/>
+          </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="fb89d8de-5878-4bfd-972d-9cd2bf4ab590" targetElement="#d2b0e9ba-7e48-4508-aabc-b4ce66e1cad9"
               sourceElement="#411a501a-5522-4fca-8b18-edbeecb501a1"/>
@@ -1563,6 +1571,9 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="883d204e-69ff-40e9-80e4-e4d5845bb2d2" name="Audio Signal" target="#e0522dc7-4350-4299-b398-fa415a948976"
               source="#b9ace19f-2d94-412d-ae1e-34b6fe329b6f"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="ba44b93f-5314-4510-9ceb-4732f3cd8f70" name="Launch Tests" target="#55c1a354-2a3e-4439-8e4b-0e01ea06b936"
+              source="#330cc398-1c4a-4d9d-b85e-b0a6617d4551"/>
         </ownedSystemFunctions>
       </ownedFunctionPkg>
       <ownedRequirementPkgs xsi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg"
@@ -3156,7 +3167,7 @@
         <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="95e89e0f-47fd-49a7-94af-de5125c6ffd9"
             name="Aircraft" abstractType="#c8b78c78-5b11-4fc0-87b7-3ca84622efea"/>
         <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="213830fc-c679-44e9-89c2-73d5034d8029"
-            name="Ground Operator" abstractType="#d475ed7d-4644-4461-97d4-b52772c9b425"/>
+            name="Ground Operation Manager" abstractType="#d475ed7d-4644-4461-97d4-b52772c9b425"/>
       </ownedSystemContext>
       <ownedSystem xsi:type="org.polarsys.capella.core.data.ctx:System" id="e0a46739-7e50-4ea6-b198-0e5efb9ce68f"
           name="IFE System">
@@ -3630,7 +3641,7 @@
               sourceElement="#c8b78c78-5b11-4fc0-87b7-3ca84622efea"/>
         </ownedActors>
         <ownedActors xsi:type="org.polarsys.capella.core.data.ctx:Actor" id="d475ed7d-4644-4461-97d4-b52772c9b425"
-            name="Ground Operator">
+            name="Ground Operation Manager">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="2ee91ba5-8a54-457b-b5b4-f8d7604a4848" targetElement="#88faafec-6848-4494-8dd3-2acda3e53688"
               sourceElement="#d475ed7d-4644-4461-97d4-b52772c9b425"/>
@@ -3642,6 +3653,9 @@
               sourceElement="#d475ed7d-4644-4461-97d4-b52772c9b425"/>
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="3b959ba6-c4bb-4a54-a4c4-ae4dd35126a0" targetElement="#5e0fff47-a1a5-4a13-867c-18348bd894af"
+              sourceElement="#d475ed7d-4644-4461-97d4-b52772c9b425"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="739a53c2-57cc-4eab-9c35-24501ceee00e" targetElement="#7fdbbeb5-db7e-405b-a981-5b17262f43ea"
               sourceElement="#d475ed7d-4644-4461-97d4-b52772c9b425"/>
           <ownedOperationalActorRealizations xsi:type="org.polarsys.capella.core.data.ctx:OperationalActorRealization"
               id="f3ba324d-7f44-41d2-96fc-b15818806697" targetElement="#d7a95c22-1622-41d5-8201-37cd463075c7"
