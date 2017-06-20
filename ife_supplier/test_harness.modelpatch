@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "CLASSNAME": "org.eclipse.emf.diffmerge.patch.api.BaseModelPatchMetadata",
+    "INSTANCE": {
+      "createdAt": "Tue Jun 20 23:20:52 CEST 2017"
+    }
+  },
+  "entries": [
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ElementEntry",
+      "INSTANCE": {
+        "type": {
+          "identifier": "http://www.polarsys.org/capella/core/fa/1.1.0#FunctionalExchange"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "dd7bbfae-6115-4df1-b9b1-80906231b5bb"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ElementEntry",
+      "INSTANCE": {
+        "type": {
+          "identifier": "http://www.polarsys.org/capella/core/ctx/1.1.0#SystemFunction"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "9572f20d-0a1f-4b40-bd71-a43b5cdf5088"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ElementEntry",
+      "INSTANCE": {
+        "type": {
+          "identifier": "http://www.polarsys.org/capella/core/fa/1.1.0#FunctionOutputPort"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "3b75261c-7b35-42c1-899d-7f62176b6f40"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ElementEntry",
+      "INSTANCE": {
+        "type": {
+          "identifier": "http://www.polarsys.org/capella/core/fa/1.1.0#FunctionInputPort"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "20c181a1-f907-45a3-b27a-a9c0cbf09397"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ReferenceEntry",
+      "INSTANCE": {
+        "target": {
+          "identifier": "9572f20d-0a1f-4b40-bd71-a43b5cdf5088"
+        },
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/core/fa/1.1.0#AbstractFunction.ownedFunctions"
+        },
+        "index": 5,
+        "direction": "ADD",
+        "context": {
+          "identifier": "411a501a-5522-4fca-8b18-edbeecb501a1"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ReferenceEntry",
+      "INSTANCE": {
+        "target": {
+          "identifier": "dd7bbfae-6115-4df1-b9b1-80906231b5bb"
+        },
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/core/fa/1.1.0#AbstractFunction.ownedFunctionalExchanges"
+        },
+        "index": 37,
+        "direction": "ADD",
+        "context": {
+          "identifier": "411a501a-5522-4fca-8b18-edbeecb501a1"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ReferenceEntry",
+      "INSTANCE": {
+        "target": {
+          "identifier": "20c181a1-f907-45a3-b27a-a9c0cbf09397"
+        },
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/activity/1.1.0#AbstractAction.inputs"
+        },
+        "index": 0,
+        "direction": "ADD",
+        "context": {
+          "identifier": "ff70c856-f667-4e61-98d7-00190703d53a"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ReferenceEntry",
+      "INSTANCE": {
+        "target": {
+          "identifier": "3b75261c-7b35-42c1-899d-7f62176b6f40"
+        },
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/activity/1.1.0#AbstractAction.outputs"
+        },
+        "index": 0,
+        "direction": "ADD",
+        "context": {
+          "identifier": "9572f20d-0a1f-4b40-bd71-a43b5cdf5088"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ReferenceEntry",
+      "INSTANCE": {
+        "target": {
+          "identifier": "20c181a1-f907-45a3-b27a-a9c0cbf09397"
+        },
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/activity/1.1.0#ActivityEdge.target"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "dd7bbfae-6115-4df1-b9b1-80906231b5bb"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ReferenceEntry",
+      "INSTANCE": {
+        "target": {
+          "identifier": "3b75261c-7b35-42c1-899d-7f62176b6f40"
+        },
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/activity/1.1.0#ActivityEdge.source"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "dd7bbfae-6115-4df1-b9b1-80906231b5bb"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.AttributeEntry",
+      "INSTANCE": {
+        "value": "Launch Tests",
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/core/1.1.0#AbstractNamedElement.name"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "dd7bbfae-6115-4df1-b9b1-80906231b5bb"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.AttributeEntry",
+      "INSTANCE": {
+        "value": "Setup Test Harness",
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/core/1.1.0#AbstractNamedElement.name"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "9572f20d-0a1f-4b40-bd71-a43b5cdf5088"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.AttributeEntry",
+      "INSTANCE": {
+        "value": "FOP 1",
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/core/1.1.0#AbstractNamedElement.name"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "3b75261c-7b35-42c1-899d-7f62176b6f40"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.AttributeEntry",
+      "INSTANCE": {
+        "value": "FIP 1",
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/core/1.1.0#AbstractNamedElement.name"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "20c181a1-f907-45a3-b27a-a9c0cbf09397"
+        }
+      }
+    }
+  ]
+}
