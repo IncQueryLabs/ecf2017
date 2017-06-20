@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "CLASSNAME": "org.eclipse.emf.diffmerge.patch.api.BaseModelPatchMetadata",
+    "INSTANCE": {
+      "createdAt": "Tue Jun 20 23:48:12 CEST 2017"
+    }
+  },
+  "entries": [
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.AttributeEntry",
+      "INSTANCE": {
+        "value": "Ground Operator",
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/core/1.1.0#AbstractNamedElement.name"
+        },
+        "direction": "REMOVE",
+        "context": {
+          "identifier": "213830fc-c679-44e9-89c2-73d5034d8029"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.AttributeEntry",
+      "INSTANCE": {
+        "value": "Ground Operator",
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/core/1.1.0#AbstractNamedElement.name"
+        },
+        "direction": "REMOVE",
+        "context": {
+          "identifier": "d475ed7d-4644-4461-97d4-b52772c9b425"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.AttributeEntry",
+      "INSTANCE": {
+        "value": "Ground Operation Manager",
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/core/1.1.0#AbstractNamedElement.name"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "d475ed7d-4644-4461-97d4-b52772c9b425"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.AttributeEntry",
+      "INSTANCE": {
+        "value": "Ground Operation Manager",
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/core/1.1.0#AbstractNamedElement.name"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "213830fc-c679-44e9-89c2-73d5034d8029"
+        }
+      }
+    }
+  ]
+}
