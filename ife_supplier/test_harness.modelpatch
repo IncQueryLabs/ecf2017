@@ -2,7 +2,7 @@
   "metadata": {
     "CLASSNAME": "org.eclipse.emf.diffmerge.patch.api.BaseModelPatchMetadata",
     "INSTANCE": {
-      "createdAt": "Tue Jun 20 23:20:52 CEST 2017"
+      "createdAt": "Tue Jun 20 23:41:32 CEST 2017"
     }
   },
   "entries": [
@@ -27,6 +27,18 @@
         "direction": "ADD",
         "context": {
           "identifier": "9572f20d-0a1f-4b40-bd71-a43b5cdf5088"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ElementEntry",
+      "INSTANCE": {
+        "type": {
+          "identifier": "http://www.polarsys.org/capella/core/fa/1.1.0#ComponentFunctionalAllocation"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "0d3ccf14-732b-441e-be59-65ad93203ba5"
         }
       }
     },
@@ -67,6 +79,22 @@
         "direction": "ADD",
         "context": {
           "identifier": "411a501a-5522-4fca-8b18-edbeecb501a1"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ReferenceEntry",
+      "INSTANCE": {
+        "target": {
+          "identifier": "0d3ccf14-732b-441e-be59-65ad93203ba5"
+        },
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/core/fa/1.1.0#AbstractFunctionalBlock.ownedFunctionalAllocation"
+        },
+        "index": 4,
+        "direction": "ADD",
+        "context": {
+          "identifier": "d475ed7d-4644-4461-97d4-b52772c9b425"
         }
       }
     },
@@ -145,6 +173,36 @@
         "direction": "ADD",
         "context": {
           "identifier": "dd7bbfae-6115-4df1-b9b1-80906231b5bb"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ReferenceEntry",
+      "INSTANCE": {
+        "target": {
+          "identifier": "9572f20d-0a1f-4b40-bd71-a43b5cdf5088"
+        },
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/core/1.1.0#AbstractTrace.targetElement"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "0d3ccf14-732b-441e-be59-65ad93203ba5"
+        }
+      }
+    },
+    {
+      "CLASSNAME": "org.eclipse.emf.diffmerge.patch.ReferenceEntry",
+      "INSTANCE": {
+        "target": {
+          "identifier": "d475ed7d-4644-4461-97d4-b52772c9b425"
+        },
+        "feature": {
+          "identifier": "http://www.polarsys.org/capella/common/core/1.1.0#AbstractTrace.sourceElement"
+        },
+        "direction": "ADD",
+        "context": {
+          "identifier": "0d3ccf14-732b-441e-be59-65ad93203ba5"
         }
       }
     },
