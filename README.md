@@ -1,6 +1,7 @@
 # EclipseCon France 2017 - Patching the gap in collaborating on model
 
 Model Patch wiki page: https://wiki.eclipse.org/EMF_DiffMerge/Model_Patch
+
 ECF 2017 session: https://www.eclipsecon.org/france2017/session/patching-gap-collaborating-models (slides attached)
 
 ## How to try the demo
